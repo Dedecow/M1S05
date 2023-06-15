@@ -23,7 +23,9 @@ switch (cor.toLowerCase()){
     case "blue":
     console.log ("Azul");
     break;
-    case "indigo": case "dark blue": case "navy blue":
+    case "indigo": 
+    case "dark blue": 
+    case "navy blue":
     console.log("Anil (ou ciano). ");
     break;
     case: "Violet":
