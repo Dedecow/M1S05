@@ -9,7 +9,7 @@
 let idade = prompt ("Digite sua idade");
 idade = parseInt(idade);
 
-if (idade >= 0) {
+if (idade >= 0 && Number,IsInterger(idade)) {
     if (idade <= 12) {
         console.log ("Criança. ")
     }else if (idade > 12 && idade <= 17){
@@ -21,5 +21,5 @@ if (idade >= 0) {
     }
 
 }else{
-    console.log ("Idade precisa ser positiva. ")
+    console.log (" Verifique a idade informada. ")
 }
