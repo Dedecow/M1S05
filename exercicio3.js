@@ -11,20 +11,26 @@ let ehPrimo;
 
 do{
 
-let numero = parseInt(prompt("Digite um número: "));
+    let numero = parseInt(prompt("Digite um número: "));
 
-if (numero === 1) {
-    ehPrimo = false;
-} else {
-    ehPrimo = true;
+    if (numero >= 0 && Number.IsInterger(numero)) {
 
-
-for (let i = 2; i < numero; i++ ){
-    if (numero % i === 0){
+        if (numero === 1) {
         ehPrimo = false;
-        break;
-    }
-}
-}while(ehPrimo === false);
+        } else {
+        ehPrimo = true;
+        }
 
-console.log("você achou um número primo. ")
+        for (let i = 2; i < numero; i++ ){
+            if (numero % i === 0){
+                ehPrimo = false;
+                break;
+            }
+        }
+
+    }else{
+        console.log("O número precisa ser positivo e inteiro para verificarmos se é primo. ")
+    }
+} while(ehPrimo === false);
+
+console.log("você achou um número primo. ");
