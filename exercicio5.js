@@ -6,3 +6,8 @@
  */
 
 let alunos = ["Alvaro", "Andre", "Antonio", "Daniel", "Eder", "Hernan", "Jader", "Keo", "Leonardo", "Michael", "Patricia", "Tiago"];
+alunos.forEach((aluno)=>{
+    if(aluno.length > 5){
+    console.log(aluno + " tem " + aluno.length + " caracteres")
+    }
+});
