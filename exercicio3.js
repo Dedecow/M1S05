@@ -10,8 +10,14 @@
 let ehPrimo;
 
 do{
-    
+
 let numero = parseInt(prompt("Digite um número: "));
+
+if (numero === 1) {
+    ehPrimo = false;
+} else {
+    ehPrimo = true;
+
 
 for (let i = 2; i < numero; i++ ){
     if (numero % i === 0){
