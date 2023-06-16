@@ -6,15 +6,17 @@
  * 0, 1, 1, 2, 3, 5, 8, 13, ...
  * Utiliza uma estrutura de repetição (while) para gerar a sequência.
  */
-let numero = null;
+let numero = prompt ("Digite um número: ");
+numero = parseInt(numero);
 let arrayFibonacci = [0,1];
-
+let i = 2;
 function proxFibonacci(){
-    fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-    return fibonacci[i];
+    arrayFibonacci[i] = arrayFibonacci[i - 1] + arrayFibonacci[i - 2];
+    return arrayFibonacci[i];
 }
 
-while (fibonacci[fibonacci.length - 1] <= numero) {
-    arrayFibonacci.push(proxFibonacci);
+while (i < numero) {
+    arrayFibonacci.push(proxFibonacci());
+    i++
 }
 console.log("Sequência de Fibonacci até " + numero + ": " + arrayFibonacci.join(", "));
