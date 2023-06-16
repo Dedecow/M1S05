@@ -15,6 +15,6 @@ function proxFibonacci(){
 }
 
 while (fibonacci[fibonacci.length - 1] <= numero) {
-    arrayfibonacci.push(proxFibonacci);
+    arrayFibonacci.push(proxFibonacci);
 }
 console.log("Sequência de Fibonacci até " + numero + ": " + arrayFibonacci.join(", "));
