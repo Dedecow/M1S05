@@ -5,3 +5,20 @@
  * é um número primo. Um número primo é aquele que é divisível apenas por 1 e por ele mesmo.
  * Utiliza uma estrutura de repetição (do while) para verificar as divisões.
  */
+
+
+let ehPrimo;
+
+do{
+    
+let numero = parseInt(prompt("Digite um número: "));
+
+for (let i = 2; i < numero; i++ ){
+    if (numero % i === 0){
+        ehPrimo = false;
+        break;
+    }
+}
+}while(ehPrimo === false);
+
+console.log("você achou um número primo. ")
