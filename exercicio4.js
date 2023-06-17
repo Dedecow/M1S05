@@ -12,7 +12,7 @@ let arrayFibonacci = [0,1];
 let i = 2;
 
 while ( i < numero) {
-    function proxFibonacci(){
+    let proxFibonacci = () => {
         arrayFibonacci[i] = arrayFibonacci[i - 1] + arrayFibonacci[i - 2];
         return arrayFibonacci[i];
     }
