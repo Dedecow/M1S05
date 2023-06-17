@@ -6,16 +6,16 @@
  * 0, 1, 1, 2, 3, 5, 8, 13, ...
  * Utiliza uma estrutura de repetição (while) para gerar a sequência.
  */
-let numero = prompt ("Digite um número: ");
+let numero = prompt ("Digite um número inteiro maior que 2 : ");
 numero = parseInt(numero);
 let arrayFibonacci = [0,1];
 let i = 2;
-function proxFibonacci(){
-    arrayFibonacci[i] = arrayFibonacci[i - 1] + arrayFibonacci[i - 2];
-    return arrayFibonacci[i];
-}
 
-while (i < numero) {
+while ( i < numero) {
+    function proxFibonacci(){
+        arrayFibonacci[i] = arrayFibonacci[i - 1] + arrayFibonacci[i - 2];
+        return arrayFibonacci[i];
+    }
     arrayFibonacci.push(proxFibonacci());
     i++
 }
