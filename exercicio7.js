@@ -16,10 +16,10 @@ let adicionarElemento = (lista, cliente) => {
     lista.push(cliente);
     return lista;
 }
-let removerUltimoElemento = (lista, cliente) => {
-    lista.pop(cliente);
-    return cliente;
-}
+
+let removerUltimoElemento = alunos.pop();
+console.log(removerUltimoElemento);
+
 let removerElementosInvervalo = (inicial, final) => {
     lista.slice(cliente);
     return lista;
