@@ -10,3 +10,21 @@
  *      remover os elementos do array compreendidos entre os índices inicial e final. Em seguida, retorna o
  *      array atualizado.
  */
+
+let nomesClientes = ["João da Silva", "Maria Oliveira", "Pedro Santos", "Ana Souza", "Carlos Rodrigues"];
+let adicionarElemento = (lista, cliente) => {
+    lista.push(cliente);
+    return lista;
+}
+let removerUltimoElemento = (lista, cliente) => {
+    lista.pop(cliente);
+    return cliente;
+}
+let removerElementosInvervalo = (inicial, final) => {
+    lista.slice(cliente);
+    return lista;
+}
+
+  
+
+
