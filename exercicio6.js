@@ -24,7 +24,7 @@ const farmaco9 = criaFarmaco('Ranitidina', 19.79);
 let listaFarmacos = [farmaco1, farmaco2, farmaco3, farmaco4, farmaco5, farmaco6, farmaco7, farmaco8, farmaco9];
 let totalPreco = null;
 
-for (let i = 0; i > listaFarmacos.length; i++){
+for (let i = 0; i < listaFarmacos.length; i++){
     totalPreco += listaFarmacos[i].preco
 } 
 console.log ('o total de produtos é' +i+ 'e o valor total de todos os produtos é R$: '+totalPreco);
