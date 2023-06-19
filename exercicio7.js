@@ -12,18 +12,26 @@
  */
 
 let nomesClientes = ["João da Silva", "Maria Oliveira", "Pedro Santos", "Ana Souza", "Carlos Rodrigues"];
-let adicionarElemento = (lista, cliente) => {
-    lista.push(cliente);
-    return lista;
+let adicionarElemento = (nomesClientes, cliente) => {
+    nomesClientes.push(cliente);
+    return nomesClientes;
+}
+console.log(nomesClientes);
+
+function removerUltimoElemento(nomesClientes) {
+    return nomesClientes.pop();
 }
 
-let removerUltimoElemento = alunos.pop();
-console.log(removerUltimoElemento);
+  
+let ultimoElemento = removerUltimoElemento(nomesClientes);
+console.log(ultimoElemento);
 
-let removerElementosInvervalo = (inicial, final) => {
-    lista.slice(cliente);
-    return lista;
+let removerElementosInvervalo = (nomesClientes, inicial, final) => {
+nomesClientes = nomesClientes.slice(1, 2);
+return nomesClientes;
 }
+console.log(nomesClientes);
+
 
   
 
