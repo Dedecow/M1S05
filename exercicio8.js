@@ -7,24 +7,22 @@
  */
 
 const calculadora = function(num1, num2, operation){
-
-};
-
-switch (operation) {
-    case "+":
-      // Operação de soma
-      break;
-    case "-":
-      // Operação de subtração
-      break;
-    case "*":
-      // Operação de multiplicação
-      break;
-    case "/":
-      // Operação de divisão
-      break;
-    default:
-      console.log ("Operação inválida. ")
-      break;
-  }
+    switch (operation) {
+        case "+":
+            return (num1 + num2);
+        break;
+        case "-":
+            return (num1 - num2);
+        break;
+        case "*":
+            return (num1 * num2);
+        break;
+        case "/":
+            return (num1 / num2);
+        break;
+        default:
+        console.log ("Operação inválida. ")
+        break;
+    }
+}
   
