@@ -10,8 +10,7 @@
 
 function criaFarmaco (farmaco, preco){
     return{
-        farmaco:farmaco;
-        preco:preco;
+        farmaco,preco
     };
 };
 const farmaco1 = criaFarmaco ('Paracetamol' , 7.89);
