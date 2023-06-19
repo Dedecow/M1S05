@@ -21,7 +21,10 @@ const farmaco7 = criaFarmaco('Omeprazol', 25.99);
 const farmaco8 = criaFarmaco('Amoxicilina', 12.49);
 const farmaco9 = criaFarmaco('Ranitidina', 19.79);
 
+let listaFarmacos = [farmaco1, farmaco2, farmaco3, farmaco4, farmaco5, farmaco6, farmaco7, farmaco8, farmaco9];
+let totalPreco = null;
 
-//for (let i=0; i < farmacos.length; i++){
-//     console.log("O preço do " + farmacos[i] + "É R$" + precos[i]);
-//}
+for (let i = 0; i > listaFarmacos.length; i++){
+    totalPreco += listaFarmacos[i].preco
+} 
+console.log ('o total de produtos é' +i+ 'e o valor total de todos os produtos é R$: '+totalPreco);
